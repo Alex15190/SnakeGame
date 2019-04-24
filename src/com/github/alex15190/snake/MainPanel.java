@@ -15,8 +15,7 @@ public class MainPanel extends JPanel implements ActionListener {
 
     public MainPanel(){
 
-        timer = new Timer(250,this);
-        timer.start();
+
 
         setBackground(Color.white);
         setLayout(new GridLayout(1,2));
@@ -57,7 +56,9 @@ public class MainPanel extends JPanel implements ActionListener {
         this.add(rightPanel);
 
         this.setFocusable(true);
-
+        
+        timer = new Timer(250,this);
+        timer.start();
     }
 
 
